@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body style="overflow-x:hidden">
+<x-dc>
+<helmet>
+  <title>Roadmates — Motorbike & Scooter Rental and Tours in Bangkok</title>
+  <meta name="description" content="Roadmates rents motorbikes and scooters in Bangkok and runs custom motorbike tours and route planning. Shop pickup on Sathorn 19, 1-day advance booking, deposit required.">
+  <link rel="canonical" href="https://roadmates.example/Home.dc.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    @media (max-width: 700px) {
+      header { flex-direction: column; align-items: stretch; row-gap: 14px; }
+      header > a { align-self: center; }
+      header nav { width: 100%; }
+      .nav-links { width: 100%; flex-wrap: nowrap !important; overflow-x: auto; justify-content: flex-start !important; gap: 14px !important; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+      .nav-links::-webkit-scrollbar { display: none; }
+      .nav-links a { font-size: 12px !important; white-space: nowrap; }
+      .fab-wrap { bottom: 16px !important; right: 16px !important; }
+      .fab-whatsapp { width: 44px !important; height: 44px !important; }
+      .fab-whatsapp svg { width: 20px !important; height: 20px !important; }
+    }
+    body { margin: 0; background: oklch(0.98 0.006 60); font-family: 'Manrope', sans-serif; }
+    a { color: oklch(0.52 0.22 25); text-decoration: none; }
+    a:hover { color: oklch(0.44 0.22 25); }
+    * { box-sizing: border-box; }
+    @keyframes hero-fade { 0%, 20% { opacity: 1; pointer-events: auto; } 25%, 100% { opacity: 0; pointer-events: none; } }
+  </style>
+  <script src="./image-slot.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Roadmates Motorbike & Scooter Rental and Motorbike Tours Bangkok",
+    "description": "Tourist-friendly motorbike and scooter rental in Bangkok — daily, weekly, and monthly rentals, plus custom motorbike tours and route planning.",
+    "image": "https://roadmates.example.com/assets/logo-icon.png",
+    "url": "https://roadmates.example/Home.dc.html",
+    "telephone": "+66924212922",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "6 Soi Sathorn 19",
+      "addressLocality": "Bangkok",
+      "addressCountry": "TH"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "10:00",
+      "closes": "19:00"
+    },
+    "sameAs": [
+      "https://www.instagram.com/Rent_Motorbike_Bangkok",
+      "https://www.tiktok.com/@rentmotorbikebangkok",
+      "https://line.me/R/ti/p/@221heidd",
+      "https://web.facebook.com/p/Roadmates-Bangkok-Motorbike-Scooter-Rental-%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%A1%E0%B8%AD%E0%B9%84%E0%B8%8B%E0%B8%84%E0%B9%8C-%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E-61575219218254/
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "400"
+    },
+    "review": [
+      {"@type":"Review","author":{"@type":"Person","name":"Rodrigo Galvez"},"reviewRating":{"@type":"Rating","ratingValue":"5"},"reviewBody":"Great bikes and the family who rents them are just the nicest people. They will even send you special events and recommendations to do in bangkok through your stay."},
+      {"@type":"Review","author":{"@type":"Person","name":"Daniel Nakauchi"},"reviewRating":{"@type":"Rating","ratingValue":"5"},"reviewBody":"Excellent scooter rental. Smooth registration process, quality scooters, and a trustworthy operator. Highly recommend this place for motorbike rentals in Bangkok."},
+      {"@type":"Review","author":{"@type":"Person","name":"Anggo Prayudi"},"reviewRating":{"@type":"Rating","ratingValue":"5"},"reviewBody":"The bike was in good condition, ready to go, clean, comfortable. The price was also cheap with such a good bike and great service."},
+      {"@type":"Review","author":{"@type":"Person","name":"Yang Ming"},"reviewRating":{"@type":"Rating","ratingValue":"5"},"reviewBody":"Top was very helpful and kind. He would tell you all the recommended route to take in Bangkok. The condition of the scooter was very good and clean."}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"How much does a scooter cost per day in Bangkok?","acceptedAnswer":{"@type":"Answer","text":"From ฿350/day for a Honda Click 125, up to ฿600/day for bigger bikes like the Yamaha NMAX, GPX Drone, or Honda Click 160. Weekly rates run ฿1,800–3,300, and per-day cost drops the longer you rent. Monthly rental (฿3,500–6,000/bike) and the 2-week rate are both paused for new customers from October to April — 1 week is the longest booking available in that period."}},
+    {"@type":"Question","name":"What if I have an accident or the bike breaks down?","acceptedAnswer":{"@type":"Answer","text":"Call or message Roadmates immediately, file a report at the nearest police station without moving the vehicle, and photograph the scene. Rentals are for use within Bangkok only."}},
+    {"@type":"Question","name":"Can I ride outside Bangkok?","acceptedAnswer":{"@type":"Answer","text":"No — bikes are for use within Bangkok only. Riding outside the city needs written permission in advance."}},
+    {"@type":"Question","name":"Do I need a license to rent a motorbike in Bangkok?","acceptedAnswer":{"@type":"Answer","text":"Yes — a valid motorcycle license or an International Driving Permit (Category A) with a motorcycle endorsement is required. ASEAN nationals can use their home-country license directly, no IDP needed."}},
+    {"@type":"Question","name":"What do I need to book a motorbike with Roadmates?","acceptedAnswer":{"@type":"Answer","text":"Your passport, license, and a refundable deposit — ฿3,000 for daily/weekly rentals, ฿5,000 for monthly. Message at least 1 day ahead to check availability, then pick up at the Sathorn 19 shop."}},
+    {"@type":"Question","name":"Is insurance included in the rental?","acceptedAnswer":{"@type":"Answer","text":"Every rental includes basic compulsory (\u0e1e.\u0e23.\u0e1a.) insurance. It does not cover damage to the bike itself — that's what the deposit is for."}},
+    {"@type":"Question","name":"Can Roadmates deliver the bike to me?","acceptedAnswer":{"@type":"Answer","text":"No — Roadmates does not offer delivery. All rentals are picked up in person at the Sathorn 19 shop in Bangkok."}}
+  ]}
+  </script>
+</helmet>
+
+<div style="display:flex;flex-direction:column;min-height:100vh;color:oklch(0.22 0.01 60)">
+  <div class="fab-wrap" style="position:fixed;bottom:24px;right:24px;z-index:30;display:flex;flex-direction:column;align-items:center;gap:10px">
+    <a href="https://wa.me/66924212922" target="_blank" title="WhatsApp" class="fab-whatsapp" style="width:52px;height:52px;border-radius:50%;background:oklch(0.52 0.22 25);color:white;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px oklch(0.52 0.22 25 / 0.4);font-size:22px">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="white"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.11-1.34A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.64 0-3.17-.46-4.48-1.26l-.32-.19-3.02.79.8-2.95-.21-.31A7.94 7.94 0 0 1 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8zm4.36-5.87c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-1.4-.62-2.32-1.66-2.9-2.58-.16-.24-.02-.38.1-.52.14-.16.28-.36.4-.52.12-.16.16-.28.24-.46.08-.18.04-.34-.04-.48-.08-.14-.5-1.2-.68-1.64-.18-.44-.36-.38-.5-.38-.14 0-.3-.02-.46-.02-.16 0-.42.06-.64.3-.22.24-.86.84-.86 2.04 0 1.2.88 2.36 1 2.52.12.16 1.72 2.64 4.18 3.6 2.06.8 2.06.53 2.44.5.38-.03 1.22-.5 1.4-.98.18-.48.18-.9.12-.98-.06-.1-.22-.16-.46-.28z"/></svg>
+    </a>
+    <a href="https://line.me/R/ti/p/@221heidd" target="_blank" title="LINE" style="width:52px;height:52px;border-radius:50%;background:#06C755;color:white;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px oklch(0 0 0 / 0.2);font-weight:700;font-size:15px;font-family:'Space Grotesk',sans-serif">LINE</a>
+    <a href="weixin://dl/chat?wzid_xcdldlr6i2il12" target="_blank" title="WeChat" style="width:52px;height:52px;border-radius:50%;background:#07C160;color:white;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px oklch(0 0 0 / 0.2)">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="white"><path d="M8.5 4C4.36 4 1 6.69 1 10.1c0 2.02 1.14 3.79 2.92 4.94l-.73 2.19a.4.4 0 0 0 .58.46l2.28-1.31c.44.12.9.2 1.37.24-.13-.44-.2-.9-.2-1.37 0-3.13 3.14-5.66 7.02-5.66.24 0 .48.01.71.03C14.5 6.24 11.75 4 8.5 4zm-2.5 3.4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm5 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM15 11c-3.31 0-6 2.24-6 5s2.69 5 6 5c.4 0 .78-.04 1.16-.1l1.98 1.1a.35.35 0 0 0 .5-.4l-.55-1.85C18.9 19.02 20 17.63 20 16c0-2.76-2.69-5-6-5zm-2 3.5c.41 0 .75.34.75.75s-.34.75-.75.75-.75-.34-.75-.75.34-.75.75-.75zm4 0c.41 0 .75.34.75.75s-.34.75-.75.75-.75-.34-.75-.75.34-.75.75-.75z"/></svg>
+    </a>
+    <a href="tel:+66924212922" title="Call" style="width:52px;height:52px;border-radius:50%;background:oklch(0.22 0.01 60);color:white;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px oklch(0 0 0 / 0.25)">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="white"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24 11.36 11.36 0 0 0 3.58.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.36 11.36 0 0 0 .57 3.58 1 1 0 0 1-.24 1.01z"/></svg>
+    </a>
+  </div>
+
+  <header style="position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:18px clamp(20px,4vw,48px);background:oklch(0.98 0.006 60 / 0.92);backdrop-filter:blur(8px);border-bottom:1px solid oklch(0.9 0.01 60)">
+    <a href="Home.dc.html" style="display:flex;align-items:center;gap:10px">
+      <img src="assets/logo-icon.png" alt="Roadmates" style="height:40px;width:40px;object-fit:contain">
+      <span style="display:flex;flex-direction:column;line-height:1.15">
+        <span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:20px;letter-spacing:-0.01em;color:oklch(0.22 0.01 60)">Roadmates</span>
+        <span style="font-size:10px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:oklch(0.52 0.22 25)">Best Bangkok Experience</span>
+      </span>
+    </a>
+    <nav style="display:flex;align-items:center;gap:20px;flex-wrap:nowrap">
+      <div class="nav-links" style="display:flex;align-items:center;gap:20px">
+        <a href="#services" style="color:oklch(0.22 0.01 60);font-weight:600;font-size:14px;white-space:nowrap">Services</a>
+        <a href="Fleet.dc.html" style="color:oklch(0.22 0.01 60);font-weight:600;font-size:14px;white-space:nowrap">Pricing</a>
+        <a href="#places" style="color:oklch(0.22 0.01 60);font-weight:600;font-size:14px;white-space:nowrap">Places</a>
+        <a href="#reviews" style="color:oklch(0.22 0.01 60);font-weight:600;font-size:14px;white-space:nowrap">Reviews</a>
+        <a href="Rental-Policy.dc.html" style="color:oklch(0.22 0.01 60);font-weight:600;font-size:14px;white-space:nowrap">Policy</a>
+        <a href="Guide-Index.dc.html" style="color:oklch(0.22 0.01 60);font-weight:600;font-size:14px;white-space:nowrap">Guide</a>
+        <a href="#contact" style="color:oklch(0.22 0.01 60);font-weight:600;font-size:14px;white-space:nowrap">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <section style="display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:56px;align-items:center;padding:72px clamp(20px,4vw,48px);max-width:1280px;margin:0 auto;width:100%">
+    <div style="display:flex;flex-direction:column;gap:24px">
+      <span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:14px;letter-spacing:0.06em;text-transform:uppercase;color:oklch(0.52 0.22 25)">Bangkok · Sathorn 19 · The Best Bangkok Experience</span>
+      <h1 style="font-family:'Space Grotesk',sans-serif;font-size:clamp(34px,4.5vw + 1rem,56px);line-height:1.05;font-weight:700;margin:0;letter-spacing:-0.02em">Explore Bangkok <span style="color:oklch(0.52 0.22 25)">freely</span>, on two wheels.</h1>
+      <p style="font-size:19px;line-height:1.6;color:oklch(0.4 0.01 60);margin:0;max-width:480px">Roadmates is a tourist-friendly motorbike rental at Sathorn 19 — easy booking over chat, real reviews you can trust, and a bike ready whenever you land.</p>
+      <div style="display:flex;gap:14px;flex-wrap:wrap">
+        <a href="https://wa.me/66924212922" target="_blank" style="background:oklch(0.52 0.22 25);color:white;padding:16px 28px;border-radius:100px;font-weight:700;font-size:16px;box-shadow:0 10px 24px oklch(0.55 0.14 165 / 0.3)">Chat on WhatsApp</a>
+        <a href="https://line.me/R/ti/p/@221heidd" target="_blank" style="background:white;color:oklch(0.22 0.01 60);border:1px solid oklch(0.85 0.01 60);padding:16px 28px;border-radius:100px;font-weight:700;font-size:16px">Chat on LINE</a>
+        <a href="tel:+66924212922" style="background:white;color:oklch(0.22 0.01 60);border:1px solid oklch(0.85 0.01 60);padding:16px 28px;border-radius:100px;font-weight:700;font-size:16px">Call us</a>
+      </div>
+      <div style="display:flex;gap:28px;margin-top:8px;flex-wrap:wrap">
+        <div><div style="font-family:'Space Grotesk',sans-serif;font-size:26px;font-weight:700">5.0★</div><div style="font-size:13px;color:oklch(0.45 0.01 60)">400 Google reviews</div></div>
+        <div><div style="font-family:'Space Grotesk',sans-serif;font-size:26px;font-weight:700">Fast</div><div style="font-size:13px;color:oklch(0.45 0.01 60)">chat replies</div></div>
+      </div>
+      <div style="display:flex;align-items:center;gap:12px;margin-top:4px">
+        <div style="display:flex">
+          <div style="width:36px;height:36px;border-radius:50%;border:2px solid white;overflow:hidden;margin-left:-8px"><image-slot id="hero-rider-1" shape="rect" style="width:100%;height:100%" placeholder="Rider"></image-slot></div>
+          <div style="width:36px;height:36px;border-radius:50%;border:2px solid white;overflow:hidden;margin-left:-8px"><image-slot id="hero-rider-2" shape="rect" style="width:100%;height:100%" placeholder="Rider"></image-slot></div>
+          <div style="width:36px;height:36px;border-radius:50%;border:2px solid white;overflow:hidden;margin-left:-8px"><image-slot id="hero-rider-3" shape="rect" style="width:100%;height:100%" placeholder="Rider"></image-slot></div>
+          <div style="width:36px;height:36px;border-radius:50%;border:2px solid white;overflow:hidden;margin-left:-8px"><image-slot id="hero-rider-4" shape="rect" style="width:100%;height:100%" placeholder="Rider"></image-slot></div>
+        </div>
+        <span style="font-size:13px;color:oklch(0.45 0.01 60)">Trusted by riders from 20+ countries</span>
+      </div>
+    </div>
+    <div style="position:relative">
+      <div style="position:absolute;top:-40px;right:-40px;width:220px;height:220px;border-radius:50%;background:oklch(0.52 0.22 25 / 0.12);filter:blur(4px);z-index:0"></div>
+      <div style="position:relative;z-index:1;width:100%;height:460px;border-radius:24px;overflow:hidden;box-shadow:0 20px 50px oklch(0 0 0 / 0.12)">
+        <div style="position:absolute;inset:0;animation:hero-fade 16s infinite"><image-slot id="hero-photo-1" shape="rect" style="width:100%;height:100%" placeholder="You + a customer"></image-slot></div>
+        <div style="position:absolute;inset:0;animation:hero-fade 16s infinite;animation-delay:4s"><image-slot id="hero-photo-2" shape="rect" style="width:100%;height:100%" placeholder="You + a customer"></image-slot></div>
+        <div style="position:absolute;inset:0;animation:hero-fade 16s infinite;animation-delay:8s"><image-slot id="hero-photo-3" shape="rect" style="width:100%;height:100%" placeholder="You + a customer"></image-slot></div>
+        <div style="position:absolute;inset:0;animation:hero-fade 16s infinite;animation-delay:12s"><image-slot id="hero-photo-4" shape="rect" style="width:100%;height:100%" placeholder="You + a customer"></image-slot></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:0 clamp(20px,4vw,48px);max-width:1280px;margin:0 auto;width:100%">
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding:20px 28px;background:white;border:1px solid oklch(0.92 0.01 60);border-radius:16px;box-shadow:0 1px 2px oklch(0 0 0 / 0.02), 0 8px 20px oklch(0 0 0 / 0.05)">
+      <span style="color:oklch(0.52 0.22 25);font-size:20px;letter-spacing:2px">★★★★★</span>
+      <span style="font-weight:700;font-size:16px">5.0★ Google rating · 400+ five-star reviews</span>
+      <a href="https://maps.app.goo.gl/QQCfJsmcwzpH29Ph9" target="_blank" style="margin-left:auto;font-weight:700;font-size:14px;white-space:nowrap">Read reviews on Google →</a>
+    </div>
+    <div style="display:flex;align-items:center;gap:18px;flex-wrap:wrap;padding:16px 4px 0;justify-content:center">
+      <span style="font-size:12px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:oklch(0.55 0.01 60)">Find us on</span>
+      <a href="https://maps.app.goo.gl/QQCfJsmcwzpH29Ph9" target="_blank" style="font-weight:700;font-size:14px;color:oklch(0.4 0.01 60)">Google</a>
+      <a href="https://instagram.com/Rent_Motorbike_Bangkok" target="_blank" style="font-weight:700;font-size:14px;color:oklch(0.4 0.01 60)">Instagram</a>
+      <a href="https://web.facebook.com/p/Roadmates-Bangkok-Motorbike-Scooter-Rental-%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%A1%E0%B8%AD%E0%B9%84%E0%B8%8B%E0%B8%84%E0%B9%8C-%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E-61575219218254/" target="_blank" style="font-weight:700;font-size:14px;color:oklch(0.4 0.01 60)">Facebook</a>
+      <a href="https://line.me/R/ti/p/@221heidd" target="_blank" style="font-weight:700;font-size:14px;color:oklch(0.4 0.01 60)">LINE</a>
+      <a href="https://tiktok.com/@rentmotorbikebangkok" target="_blank" style="font-weight:700;font-size:14px;color:oklch(0.4 0.01 60)">TikTok</a>
+      <a href="weixin://dl/chat?wzid_xcdldlr6i2il12" target="_blank" style="font-weight:700;font-size:14px;color:oklch(0.4 0.01 60)">WeChat</a>
+    </div>
+  </section>
+
+  <section id="services" style="padding:64px clamp(20px,4vw,48px);max-width:1280px;margin:0 auto;width:100%">
+    <div style="width:28px;height:4px;border-radius:2px;background:oklch(0.52 0.22 25);margin-bottom:14px"></div><h2 style="font-family:'Space Grotesk',sans-serif;font-size:32px;font-weight:700;margin:0 0 8px;letter-spacing:-0.01em">What we do</h2>
+    <p style="color:oklch(0.45 0.01 60);font-size:16px;margin:0 0 36px">Rentals, gear, and guided rides for tourists — all set up over chat, no matter where you're from.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px">
+      <div style="background:white;border:1px solid oklch(0.68 0.16 45 / 0.3);border-radius:16px;padding:26px 20px;display:flex;flex-direction:column;gap:14px;box-shadow:0 1px 2px oklch(0 0 0 / 0.02), 0 8px 20px oklch(0 0 0 / 0.05)">
+        <div style="width:48px;height:48px;border-radius:50%;background:oklch(0.94 0.05 25);display:flex;align-items:center;justify-content:center"><div style="width:18px;height:18px;border-radius:6px;border:2px dashed oklch(0.52 0.22 25)"></div></div>
+        <div style="font-weight:700;font-size:16px">Custom route planning</div>
+        <div style="font-size:14px;color:oklch(0.45 0.01 60);line-height:1.5">We build you a personal riding route, so you see the real Bangkok — not just the tourist track.</div>
+      </div>
+      <div style="background:white;border:1px solid oklch(0.92 0.01 60);border-radius:16px;padding:26px 20px;display:flex;flex-direction:column;gap:14px;box-shadow:0 1px 2px oklch(0 0 0 / 0.02), 0 8px 20px oklch(0 0 0 / 0.05)">
+        <div style="width:48px;height:48px;border-radius:50%;background:oklch(0.94 0.05 25);display:flex;align-items:center;justify-content:center"><div style="width:18px;height:18px;border-radius:50%;background:oklch(0.52 0.22 25)"></div></div>
+        <div style="font-weight:700;font-size:16px">Daily &amp; weekly rental</div>
+        <div style="font-size:14px;color:oklch(0.45 0.01 60);line-height:1.5">Grab a bike for a day, a weekend, or a week.</div>
+      </div>
+      <div style="background:white;border:1px solid oklch(0.92 0.01 60);border-radius:16px;padding:26px 20px;display:flex;flex-direction:column;gap:14px;box-shadow:0 1px 2px oklch(0 0 0 / 0.02), 0 8px 20px oklch(0 0 0 / 0.05)">
+        <div style="width:48px;height:48px;border-radius:50%;background:oklch(0.94 0.05 25);display:flex;align-items:center;justify-content:center"><div style="width:16px;height:16px;background:oklch(0.52 0.22 25);transform:rotate(45deg)"></div></div>
+        <div style="font-weight:700;font-size:16px">Long-term rental</div>
+        <div style="font-size:14px;color:oklch(0.45 0.01 60);line-height:1.5">Living in Bangkok a while? Monthly rates available.</div>
+      </div>
+      <div style="background:white;border:1px solid oklch(0.92 0.01 60);border-radius:16px;padding:26px 20px;display:flex;flex-direction:column;gap:14px;box-shadow:0 1px 2px oklch(0 0 0 / 0.02), 0 8px 20px oklch(0 0 0 / 0.05)">
+        <div style="width:48px;height:48px;border-radius:50%;background:oklch(0.94 0.05 25);display:flex;align-items:center;justify-content:center"><div style="width:20px;height:20px;border-radius:6px;background:oklch(0.52 0.22 25)"></div></div>
+        <div style="font-weight:700;font-size:16px">Helmet &amp; gear included</div>
+        <div style="font-size:14px;color:oklch(0.45 0.01 60);line-height:1.5">Every rental comes with a helmet, no extra charge.</div>
+      </div>
+      <div style="background:white;border:1px solid oklch(0.92 0.01 60);border-radius:16px;padding:26px 20px;display:flex;flex-direction:column;gap:14px;box-shadow:0 1px 2px oklch(0 0 0 / 0.02), 0 8px 20px oklch(0 0 0 / 0.05)">
+        <div style="width:48px;height:48px;border-radius:50%;background:oklch(0.94 0.05 25);display:flex;align-items:center;justify-content:center"><div style="width:16px;height:16px;background:oklch(0.52 0.22 25);transform:rotate(45deg)"></div></div>
+        <div style="font-weight:700;font-size:16px">Pickup at our Sathorn 19 shop</div>
+        <div style="font-size:14px;color:oklch(0.45 0.01 60);line-height:1.5">No delivery — swing by and we'll have your bike ready.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="fleet" style="padding:64px clamp(20px,4vw,48px);background:white;border-top:1px solid oklch(0.92 0.01 60);border-bottom:1px solid oklch(0.92 0.01 60)">
+    <div style="max-width:1280px;margin:0 auto;display:flex;align-items:baseline;justify-content:space-between;margin-bottom:36px">
+      <div>
+        <div style="width:28px;height:4px;border-radius:2px;background:oklch(0.52 0.22 25);margin-bottom:14px"></div><h2 style="font-family:'Space Grotesk',sans-serif;font-size:32px;font-weight:700;margin:0 0 8px;letter-spacing:-0.01em">Our fleet</h2>
+        <p style="color:oklch(0.45 0.01 60);font-size:16px;margin:0">Automatic scooters, from city runabouts to bigger rides.</p>
+      </div>
+      <a href="Fleet.dc.html" style="font-weight:700;font-size:15px">See all bikes &amp; pricing →</a>
+    </div>
+    <div style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px">
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <image-slot id="fleet-1" shape="rounded" radius="16" style="width:100%;height:240px;box-shadow:0 6px 18px oklch(0 0 0 / 0.06)" placeholder="Honda Click 125i"></image-slot>
+        <div style="font-weight:700;font-size:15px">Honda Click 125i</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <image-slot id="fleet-2" shape="rounded" radius="16" style="width:100%;height:240px;box-shadow:0 6px 18px oklch(0 0 0 / 0.06)" placeholder="Honda Scoopy i"></image-slot>
+        <div style="font-weight:700;font-size:15px">Honda Scoopy i</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <image-slot id="fleet-3" shape="rounded" radius="16" style="width:100%;height:240px;box-shadow:0 6px 18px oklch(0 0 0 / 0.06)" placeholder="Yamaha NMAX"></image-slot>
+        <div style="font-weight:700;font-size:15px">Yamaha NMAX</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <image-slot id="fleet-4" shape="rounded" radius="16" style="width:100%;height:240px;box-shadow:0 6px 18px oklch(0 0 0 / 0.06)" placeholder="Yamaha Aerox"></image-slot>
+        <div style="font-weight:700;font-size:15px">Yamaha Aerox</div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:72px clamp(20px,4vw,48px);max-width:1280px;margin:0 auto;width:100%">
+    <div style="display:flex;justify-content:center"><div style="width:28px;height:4px;border-radius:2px;background:oklch(0.52 0.22 25);margin-bottom:14px"></div></div><h2 style="font-family:'Space Grotesk',sans-serif;font-size:32px;font-weight:700;margin:0 0 40px;letter-spacing:-0.01em;text-align:center">How it works</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:32px">
+      <div style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px">
+        <div style="width:56px;height:56px;border-radius:100px;background:oklch(0.52 0.22 25);color:white;display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:22px;box-shadow:0 8px 20px oklch(0.68 0.16 45 / 0.35)">1</div>
+        <div style="font-weight:700;font-size:17px">Message us</div>
+        <div style="font-size:14px;color:oklch(0.45 0.01 60);max-width:260px">Tell us your dates at least 1 day ahead so we can check bike availability.</div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px">
+        <div style="width:56px;height:56px;border-radius:100px;background:oklch(0.52 0.22 25);color:white;display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:22px;box-shadow:0 8px 20px oklch(0.68 0.16 45 / 0.35)">2</div>
+        <div style="font-weight:700;font-size:17px">We confirm &amp; hold it</div>
+        <div style="font-size:14px;color:oklch(0.45 0.01 60);max-width:260px">We check availability and reserve your bike at Sathorn 19.</div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px">
+        <div style="width:56px;height:56px;border-radius:100px;background:oklch(0.52 0.22 25);color:white;display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:22px;box-shadow:0 8px 20px oklch(0.68 0.16 45 / 0.35)">3</div>
+        <div style="font-weight:700;font-size:17px">Pick up &amp; ride</div>
+        <div style="font-size:14px;color:oklch(0.45 0.01 60);max-width:260px">Swing by our Sathorn 19 shop to collect it. Helmet included.</div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:64px clamp(20px,4vw,48px);max-width:1280px;margin:0 auto;width:100%;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:48px;align-items:center">
+    <image-slot id="story-photo" shape="rounded" radius="20" style="width:100%;height:320px" placeholder="Founder / team photo"></image-slot>
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <div style="width:28px;height:4px;border-radius:2px;background:oklch(0.52 0.22 25)"></div>
+      <h2 style="font-family:'Space Grotesk',sans-serif;font-size:28px;font-weight:700;margin:0;letter-spacing:-0.01em">Our story</h2>
+      <p style="font-size:16px;line-height:1.7;color:oklch(0.4 0.01 60);margin:0">Roadmates began with a single question: what would it take to give every traveler the best possible experience on two wheels in Bangkok? The answer became a family-run shop at Sathorn 19, built around one standard — treat every visitor the way we'd want to be treated in an unfamiliar city.</p>
+      <p style="font-size:16px;line-height:1.7;color:oklch(0.4 0.01 60);margin:0">That's still what drives us today: honest advice, bikes we'd ride ourselves, and routes we plan around you — so you leave having ridden the real Bangkok, not just the guidebook version. Come say hi when you land.</p>
+    </div>
+  </section>
+
+  <section id="places" style="padding:64px clamp(20px,4vw,48px);max-width:1280px;margin:0 auto;width:100%;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:48px;align-items:center">
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <div style="width:28px;height:4px;border-radius:2px;background:oklch(0.52 0.22 25)"></div>
+      <h2 style="font-family:'Space Grotesk',sans-serif;font-size:28px;font-weight:700;margin:0;letter-spacing:-0.01em">Our own list of favorite spots</h2>
+      <p style="font-size:16px;line-height:1.7;color:oklch(0.4 0.01 60);margin:0">Beyond the bike, we hand every renter a curated list of the spots we personally ride to — cafés, viewpoints, and back-street routes most guides skip. It's not posted online; we go through it with you when you pick up your bike, so it's tailored to how many days you have and what you're into.</p>
+      <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:8px">
+        <a href="https://wa.me/66924212922" target="_blank" style="background:oklch(0.52 0.22 25);color:white;padding:14px 26px;border-radius:100px;font-weight:700;font-size:15px">Book a bike to get the list →</a>
+      </div>
+    </div>
+    <image-slot id="favorite-spots-photo" shape="rounded" radius="20" style="width:100%;height:320px" placeholder="Photo — a favorite riding spot"></image-slot>
+  </section>
+
+  <section id="reviews" style="padding:72px clamp(20px,4vw,48px);background:white;border-top:1px solid oklch(0.92 0.01 60);border-bottom:1px solid oklch(0.92 0.01 60)">
+    <div style="max-width:1280px;margin:0 auto;width:100%">
+      <div style="display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:36px">
+        <div>
+          <div style="width:28px;height:4px;border-radius:2px;background:oklch(0.52 0.22 25);margin-bottom:14px"></div>
+          <h2 style="font-family:'Space Grotesk',sans-serif;font-size:32px;font-weight:700;margin:0 0 8px;letter-spacing:-0.01em">What riders say</h2>
+          <p style="color:oklch(0.45 0.01 60);font-size:16px;margin:0">5.0★ from 400 Google reviews — straight from Google, updated automatically.</p>
+        </div>
+        <a href="https://maps.app.goo.gl/QQCfJsmcwzpH29Ph9" target="_blank" style="font-weight:700;font-size:15px;white-space:nowrap">All reviews on Google →</a>
+      </div>
+      <div style="display:flex;gap:20px;align-items:stretch;flex-wrap:wrap">
+        <div style="flex:0 0 220px;background:oklch(0.98 0.006 60);border:1px solid oklch(0.92 0.01 60);border-radius:16px;padding:28px 22px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;box-shadow:0 1px 2px oklch(0 0 0 / 0.02), 0 8px 20px oklch(0 0 0 / 0.05)">
+          <span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:15px;letter-spacing:0.04em;text-transform:uppercase;color:oklch(0.22 0.01 60)">Excellent</span>
+          <span style="color:oklch(0.52 0.22 25);font-size:24px;letter-spacing:3px">★★★★★</span>
+          <span style="font-size:13px;color:oklch(0.45 0.01 60)">Based on <strong style="color:oklch(0.28 0.01 60)">400 reviews</strong></span>
+          <svg viewBox="0 0 74 24" style="width:66px;height:auto;margin-top:6px" aria-label="Google">
+            <text x="0" y="18" font-family="Arial,sans-serif" font-size="19" font-weight="700"><tspan fill="#4285F4">G</tspan><tspan fill="#EA4335">o</tspan><tspan fill="#FBBC05">o</tspan><tspan fill="#4285F4">g</tspan><tspan fill="#34A853">l</tspan><tspan fill="#EA4335">e</tspan></text>
+          </svg>
+        </div>
+        <div style="flex:1 1 480px;display:flex;flex-direction:column;gap:20px;min-width:0">
+          <div ref="{{ widgetHost }}" style="min-height:{{ hostMinHeight }}"></div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px">
+            <div style="position:relative;border-radius:16px;overflow:hidden;border:1px solid oklch(0.92 0.01 60);box-shadow:0 1px 2px oklch(0 0 0 / 0.02)">
+              <image-slot id="review-bg-1" shape="rect" style="position:absolute;inset:0;z-index:0;opacity:1" placeholder="Rodrigo's photo"></image-slot>
+              <div style="position:relative;z-index:1;background:linear-gradient(oklch(0.98 0.006 60 / 0.55),oklch(0.98 0.006 60 / 0.85) 60%);border-radius:16px;padding:26px;display:flex;flex-direction:column;gap:10px;pointer-events:none">
+                <span style="color:oklch(0.52 0.22 25);font-size:16px;letter-spacing:2px">★★★★★</span>
+                <p style="margin:0;font-size:14px;line-height:1.6;color:oklch(0.3 0.01 60)">"Great bikes and the family who rents them are just the nicest people. They will even send you special events and recommendations to do in bangkok through your stay."</p>
+                <span style="font-weight:700;font-size:13px;color:oklch(0.45 0.01 60)">Rodrigo Galvez — Google review</span>
+              </div>
+            </div>
+            <div style="position:relative;border-radius:16px;overflow:hidden;border:1px solid oklch(0.92 0.01 60);box-shadow:0 1px 2px oklch(0 0 0 / 0.02)">
+              <image-slot id="review-bg-2" shape="rect" style="position:absolute;inset:0;z-index:0;opacity:1" placeholder="Daniel's photo"></image-slot>
+              <div style="position:relative;z-index:1;background:linear-gradient(oklch(0.98 0.006 60 / 0.55),oklch(0.98 0.006 60 / 0.85) 60%);border-radius:16px;padding:26px;display:flex;flex-direction:column;gap:10px;pointer-events:none">
+                <span style="color:oklch(0.52 0.22 25);font-size:16px;letter-spacing:2px">★★★★★</span>
+                <p style="margin:0;font-size:14px;line-height:1.6;color:oklch(0.3 0.01 60)">"Excellent scooter rental. Smooth registration process, quality scooters, and a trustworthy operator. Highly recommend this place for motorbike rentals in Bangkok."</p>
+                <span style="font-weight:700;font-size:13px;color:oklch(0.45 0.01 60)">Daniel Nakauchi — Google review</span>
+              </div>
+            </div>
+            <div style="position:relative;border-radius:16px;overflow:hidden;border:1px solid oklch(0.92 0.01 60);box-shadow:0 1px 2px oklch(0 0 0 / 0.02)">
+              <image-slot id="review-bg-3" shape="rect" style="position:absolute;inset:0;z-index:0;opacity:1" placeholder="Anggo's photo"></image-slot>
+              <div style="position:relative;z-index:1;background:linear-gradient(oklch(0.98 0.006 60 / 0.55),oklch(0.98 0.006 60 / 0.85) 60%);border-radius:16px;padding:26px;display:flex;flex-direction:column;gap:10px;pointer-events:none">
+                <span style="color:oklch(0.52 0.22 25);font-size:16px;letter-spacing:2px">★★★★★</span>
+                <p style="margin:0;font-size:14px;line-height:1.6;color:oklch(0.3 0.01 60)">"The bike was in good condition, ready to go, clean, comfortable and we didn't need to fill the gasoline, they can help us to do it. The price was also cheap with such a good bike and great service."</p>
+                <span style="font-weight:700;font-size:13px;color:oklch(0.45 0.01 60)">Anggo Prayudi — Local Guide, Google review</span>
+              </div>
+            </div>
+            <div style="position:relative;border-radius:16px;overflow:hidden;border:1px solid oklch(0.92 0.01 60);box-shadow:0 1px 2px oklch(0 0 0 / 0.02)">
+              <image-slot id="review-bg-4" shape="rect" style="position:absolute;inset:0;z-index:0;opacity:1" placeholder="Yang's photo"></image-slot>
+              <div style="position:relative;z-index:1;background:linear-gradient(oklch(0.98 0.006 60 / 0.55),oklch(0.98 0.006 60 / 0.85) 60%);border-radius:16px;padding:26px;display:flex;flex-direction:column;gap:10px;pointer-events:none">
+                <span style="color:oklch(0.52 0.22 25);font-size:16px;letter-spacing:2px">★★★★★</span>
+                <p style="margin:0;font-size:14px;line-height:1.6;color:oklch(0.3 0.01 60)">"Top was very helpful and kind. He would tell you all the recommended route to take in Bangkok. The condition of the scooter was very good and clean, helmets were also clean and sturdy."</p>
+                <span style="font-weight:700;font-size:13px;color:oklch(0.45 0.01 60)">Yang Ming — Local Guide, Google review</span>
+              </div>
+            </div>
+            <sc-for list="{{ reviews }}" as="rv" hint-placeholder-count="0">
+              <div style="background:oklch(0.98 0.006 60);border:1px solid oklch(0.92 0.01 60);border-radius:16px;padding:26px;display:flex;flex-direction:column;gap:14px;box-shadow:0 1px 2px oklch(0 0 0 / 0.02), 0 8px 20px oklch(0 0 0 / 0.05)">
+                <div style="display:flex;align-items:center;justify-content:space-between">
+                  <span style="color:oklch(0.52 0.22 25);font-size:15px;letter-spacing:2px">{{ rv.stars }}</span>
+                  <span style="color:oklch(0.6 0.01 60);font-size:11px;font-weight:700">G</span>
+                </div>
+                <p style="margin:0;font-size:15px;line-height:1.6;color:oklch(0.3 0.01 60)">{{ rv.text }}</p>
+                <div style="display:flex;align-items:center;gap:12px;margin-top:auto">
+                  <div style="{{ rv.avatarStyle }}">{{ rv.initial }}</div>
+                  <div style="line-height:1.3">
+                    <div style="font-weight:700;font-size:14px">{{ rv.author }}</div>
+                    <div style="font-size:12px;color:oklch(0.5 0.01 60)">{{ rv.when }}</div>
+                  </div>
+                </div>
+              </div>
+            </sc-for>
+          </div>
+          <sc-if value="{{ apiError }}" hint-placeholder-val="{{ false }}">
+            <div style="font-size:13px;color:oklch(0.55 0.14 30)">Couldn't load Google reviews: {{ apiError }}</div>
+          </sc-if>
+      <sc-if value="{{ needsSetup }}" hint-placeholder-val="{{ true }}">
+        <div style="position:relative;border-radius:16px;overflow:hidden">
+          <image-slot id="review-setup-bg" shape="rect" style="position:absolute;inset:0;z-index:0" placeholder="Background photo"></image-slot>
+          <div style="position:relative;z-index:1;pointer-events:none;border:1px dashed oklch(0.8 0.02 60);border-radius:16px;padding:40px 28px;display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center;background:linear-gradient(oklch(0.98 0.006 60 / 0.55),oklch(0.98 0.006 60 / 0.85) 60%)">
+            <span style="color:oklch(0.52 0.22 25);font-size:20px;letter-spacing:2px">★★★★★</span>
+            <div style="font-weight:700;font-size:17px">Live Google reviews load here</div>
+            <p style="margin:0;font-size:14px;line-height:1.6;color:oklch(0.45 0.01 60);max-width:460px">In Tweaks, either paste a Google Places API key + Place ID to pull reviews straight from Google, or a widget ID from Elfsight / Trustindex. Either way the real reviews load automatically.</p>
+            <a href="https://maps.app.goo.gl/QQCfJsmcwzpH29Ph9" target="_blank" style="font-weight:700;font-size:14px;pointer-events:auto">Read the 400 reviews on Google →</a>
+          </div>
+        </div>
+      </sc-if>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" style="padding:64px clamp(20px,4vw,48px);max-width:1100px;margin:0 auto;width:100%">
+    <div style="width:28px;height:4px;border-radius:2px;background:oklch(0.52 0.22 25);margin-bottom:14px"></div>
+    <h2 style="font-family:'Space Grotesk',sans-serif;font-size:28px;font-weight:700;margin:0 0 20px">Questions renters ask us most</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px">
+      <div style="background:white;border:1px solid oklch(0.92 0.01 60);border-radius:14px;padding:20px"><div style="font-weight:700;font-size:15px;margin-bottom:6px">How much does a scooter cost per day?</div><div style="font-size:14px;color:oklch(0.45 0.01 60);line-height:1.5">From ฿350/day (Honda Click 125) up to ฿600/day (Yamaha NMAX, GPX Drone, Honda Click 160) — weekly runs ฿1,800–3,300. Monthly rental is paused for new customers Oct–Apr, and the 2-week rate isn't available during that period either (1 week max). Full price list on Fleet & Pricing.</div></div>
+      <div style="background:white;border:1px solid oklch(0.92 0.01 60);border-radius:14px;padding:20px"><div style="font-weight:700;font-size:15px;margin-bottom:6px">What if I have an accident or breakdown?</div><div style="font-size:14px;color:oklch(0.45 0.01 60);line-height:1.5">Call us immediately, file a report at the nearest police station without moving the bike, and take photos of the scene. Rentals are for use within Bangkok only.</div></div>
+      <div style="background:white;border:1px solid oklch(0.92 0.01 60);border-radius:14px;padding:20px"><div style="font-weight:700;font-size:15px;margin-bottom:6px">Do I need a license?</div><div style="font-size:14px;color:oklch(0.45 0.01 60);line-height:1.5">Yes — a valid motorcycle license or an International Driving Permit (Category A) with a motorcycle endorsement. ASEAN nationals can use their home-country license directly, no IDP needed.</div></div>
+      <div style="background:white;border:1px solid oklch(0.92 0.01 60);border-radius:14px;padding:20px"><div style="font-weight:700;font-size:15px;margin-bottom:6px">What do I need to book?</div><div style="font-size:14px;color:oklch(0.45 0.01 60);line-height:1.5">Passport, license, and a refundable deposit (฿3,000 daily/weekly, ฿5,000 monthly) — message at least 1 day ahead, then pick up at our Sathorn 19 shop.</div></div>
+      <div style="background:white;border:1px solid oklch(0.92 0.01 60);border-radius:14px;padding:20px"><div style="font-weight:700;font-size:15px;margin-bottom:6px">Can I ride outside Bangkok?</div><div style="font-size:14px;color:oklch(0.45 0.01 60);line-height:1.5">No — bikes are for use within Bangkok only. Riding outside the city needs written permission in advance.</div></div>
+      <div style="background:white;border:1px solid oklch(0.92 0.01 60);border-radius:14px;padding:20px"><div style="font-weight:700;font-size:15px;margin-bottom:6px">Is insurance included?</div><div style="font-size:14px;color:oklch(0.45 0.01 60);line-height:1.5">Basic compulsory (พ.ร.บ.) insurance is included — it doesn't cover damage to the bike itself.</div></div>
+      <div style="background:white;border:1px solid oklch(0.92 0.01 60);border-radius:14px;padding:20px"><div style="font-weight:700;font-size:15px;margin-bottom:6px">Can you deliver the bike?</div><div style="font-size:14px;color:oklch(0.45 0.01 60);line-height:1.5">No — shop pickup only at Sathorn 19.</div></div>
+    </div>
+    <a href="Rental-Policy.dc.html" style="display:inline-flex;margin-top:20px;font-weight:700;font-size:14px">Full rental policy →</a>
+  </section>
+
+  <section id="customer-photos" style="position:relative;height:260px;overflow:hidden">
+    <div style="position:absolute;inset:0;display:grid;grid-template-columns:repeat(6,1fr)">
+      <div style="min-width:0;height:100%;overflow:hidden"><image-slot id="rider-1" shape="rect" style="width:100%;height:100%" placeholder="You + a customer"></image-slot></div>
+      <div style="min-width:0;height:100%;overflow:hidden"><image-slot id="rider-2" shape="rect" style="width:100%;height:100%" placeholder="You + a customer"></image-slot></div>
+      <div style="min-width:0;height:100%;overflow:hidden"><image-slot id="rider-3" shape="rect" style="width:100%;height:100%" placeholder="You + a customer"></image-slot></div>
+      <div style="min-width:0;height:100%;overflow:hidden"><image-slot id="rider-4" shape="rect" style="width:100%;height:100%" placeholder="You + a customer"></image-slot></div>
+      <div style="min-width:0;height:100%;overflow:hidden"><image-slot id="rider-5" shape="rect" style="width:100%;height:100%" placeholder="You + a customer"></image-slot></div>
+      <div style="min-width:0;height:100%;overflow:hidden"><image-slot id="rider-6" shape="rect" style="width:100%;height:100%" placeholder="You + a customer"></image-slot></div>
+    </div>
+    <div style="position:absolute;inset:0;background:linear-gradient(180deg, oklch(0.16 0.02 20 / 0.25), oklch(0.16 0.02 20 / 0.65));display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:6px;pointer-events:none">
+      <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:24px;color:white">Moments with our riders</div>
+      <p style="color:oklch(0.9 0.02 25);font-size:15px;margin:0">Us and the travelers who've picked up a bike with us.</p>
+    </div>
+  </section>
+
+  <section style="padding:64px clamp(20px,4vw,48px);max-width:900px;margin:0 auto;width:100%;background:white;border-top:1px solid oklch(0.92 0.01 60);border-bottom:1px solid oklch(0.92 0.01 60);text-align:center">
+    <div style="width:28px;height:4px;border-radius:2px;background:oklch(0.52 0.22 25);margin:0 auto 14px"></div>
+    <h2 style="font-family:'Space Grotesk',sans-serif;font-size:28px;font-weight:700;margin:0;letter-spacing:-0.01em">Rental policy — read before you come</h2>
+    <p style="font-size:16px;color:oklch(0.45 0.01 60);max-width:520px;margin:14px auto 20px">Booking window, deposit, insurance, and pickup details — all in one place.</p>
+    <a href="Rental-Policy.dc.html" style="display:inline-flex;font-weight:700;font-size:15px;background:oklch(0.52 0.22 25);color:white;padding:14px 26px;border-radius:100px">Read the rental policy →</a>
+  </section>
+
+  <section id="contact" style="position:relative;padding:80px clamp(20px,4vw,48px)">
+    <image-slot id="contact-bg" shape="rect" style="position:absolute;inset:0;z-index:0" placeholder="Shopfront photo — Sathorn 19"></image-slot>
+    <div style="position:absolute;inset:0;background:linear-gradient(135deg, oklch(0.16 0.015 165 / 0.94), oklch(0.16 0.015 165 / 0.8));z-index:1;pointer-events:none"></div>
+    <div style="position:relative;z-index:2;max-width:1280px;margin:0 auto;width:100%;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:48px">
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <div style="width:28px;height:4px;border-radius:2px;background:oklch(0.52 0.22 25);margin-bottom:14px"></div><h2 style="font-family:'Space Grotesk',sans-serif;font-size:32px;font-weight:700;margin:0;letter-spacing:-0.01em;color:white">Come say hi, or just message us</h2>
+      <p style="font-size:16px;color:oklch(0.88 0.02 25);line-height:1.6;margin:0">Sathorn 19, Bangkok. Open daily. Fastest way to book is chat — we usually reply within minutes.</p>
+      <div style="display:flex;flex-direction:column;gap:14px;margin-top:8px">
+        <a href="https://wa.me/66924212922" target="_blank" style="display:flex;align-items:center;gap:12px;font-weight:700;font-size:16px;color:white"><span style="width:10px;height:10px;border-radius:50%;background:oklch(0.52 0.22 25)"></span>WhatsApp — chat now</a>
+        <a href="https://line.me/R/ti/p/@221heidd" target="_blank" style="display:flex;align-items:center;gap:12px;font-weight:700;font-size:16px;color:white"><span style="width:10px;height:10px;border-radius:50%;background:oklch(0.52 0.22 25)"></span>LINE — @221heidd</a>
+        <a href="https://instagram.com/Rent_Motorbike_Bangkok" target="_blank" style="display:flex;align-items:center;gap:12px;font-weight:700;font-size:16px;color:white"><span style="width:10px;height:10px;border-radius:50%;background:oklch(0.52 0.22 25)"></span>Instagram — @Rent_Motorbike_Bangkok</a>
+        <a href="https://web.facebook.com/p/Roadmates-Bangkok-Motorbike-Scooter-Rental-%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%A1%E0%B8%AD%E0%B9%84%E0%B8%8B%E0%B8%84%E0%B9%8C-%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E-61575219218254/" target="_blank" style="display:flex;align-items:center;gap:12px;font-weight:700;font-size:16px;color:white"><span style="width:10px;height:10px;border-radius:50%;background:oklch(0.52 0.22 25)"></span>Facebook — Roadmates Bangkok Motorbike & Scooter Rental</a>
+        <a href="https://tiktok.com/@rentmotorbikebangkok" target="_blank" style="display:flex;align-items:center;gap:12px;font-weight:700;font-size:16px;color:white"><span style="width:10px;height:10px;border-radius:50%;background:oklch(0.52 0.22 25)"></span>TikTok — @rentmotorbikebangkok</a>
+        <a href="weixin://dl/chat?wzid_xcdldlr6i2il12" target="_blank" style="display:flex;align-items:center;gap:12px;font-weight:700;font-size:16px;color:white"><span style="width:10px;height:10px;border-radius:50%;background:oklch(0.52 0.22 25)"></span>WeChat — wzid_xcdldlr6i2il12</a>
+        <a href="tel:+66924212922" style="display:flex;align-items:center;gap:12px;font-weight:700;font-size:16px;color:white"><span style="width:10px;height:10px;border-radius:50%;background:oklch(0.75 0.01 60)"></span>Call — +66 92 421 2922</a>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:14px">
+      <iframe src="{{ mapEmbedSrc }}" title="{{ mapTitle }}" style="width:100%;height:280px;border:0;border-radius:20px;box-shadow:0 10px 30px oklch(0 0 0 / 0.25)" loading="lazy"></iframe>
+      <a href="{{ directionsHref }}" target="_blank" style="align-self:flex-start;font-weight:700;font-size:14px;color:white">Get directions →</a>
+    </div>
+    </div>
+  </section>
+
+  <footer style="padding:48px clamp(20px,4vw,48px) 36px;border-top:1px solid oklch(0.92 0.01 60);max-width:1280px;margin:0 auto;width:100%;display:flex;flex-direction:column;gap:24px">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:24px">
+      <div style="display:flex;align-items:center;gap:10px">
+        <img src="assets/logo-icon.png" alt="Roadmates" style="height:32px;width:32px;object-fit:contain">
+        <div style="display:flex;flex-direction:column;line-height:1.2">
+          <span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:16px;color:oklch(0.22 0.01 60)">Roadmates</span>
+          <span style="font-size:11px;color:oklch(0.5 0.01 60)">Sathorn 19, Bangkok</span>
+        </div>
+      </div>
+      <div style="display:flex;gap:28px;flex-wrap:wrap">
+      <a href="Fleet.dc.html" style="font-size:14px;color:oklch(0.5 0.01 60)">Pricing</a>
+      <a href="Rental-Policy.dc.html" style="font-size:14px;color:oklch(0.5 0.01 60)">Rental policy</a>
+      <a href="Guide-Index.dc.html" style="font-size:14px;color:oklch(0.5 0.01 60)">Riding in Bangkok</a>
+      </div>
+    </div>
+    <div style="height:1px;background:linear-gradient(90deg, oklch(0.68 0.16 45 / 0.4), oklch(0.52 0.22 25 / 0.4))"></div>
+    <span style="font-size:13px;color:oklch(0.55 0.01 60)">© 2026 Roadmates — The Best Bangkok Experience.</span>
+  </footer>
+
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;googleApiKey&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Google reviews (direct)&quot;},&quot;googlePlaceId&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Google reviews (direct)&quot;},&quot;reviewProvider&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Elfsight&quot;,&quot;Trustindex&quot;],&quot;default&quot;:&quot;Elfsight&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Review widget (alternative)&quot;},&quot;reviewWidgetId&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Review widget (alternative)&quot;},&quot;shopAddress&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Roadmates Motorbike &amp; Scooter Rental and Motorbike tour Bangkok&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Location&quot;},&quot;directionsUrl&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;https://maps.app.goo.gl/fWb6rvi1HnerBGGo8&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Location&quot;}}">
+class Component extends DCLogic {
+  host = React.createRef();
+  state = { reviews: [], apiError: '' };
+
+  componentDidMount() { this.mountWidget(); this.fetchGoogleReviews(); }
+  componentDidUpdate(prev) {
+    if (prev.reviewProvider !== this.props.reviewProvider || prev.reviewWidgetId !== this.props.reviewWidgetId) this.mountWidget();
+    if (prev.googleApiKey !== this.props.googleApiKey || prev.googlePlaceId !== this.props.googlePlaceId) this.fetchGoogleReviews();
+  }
+
+  async fetchGoogleReviews() {
+    const key = (this.props.googleApiKey || '').trim();
+    const place = (this.props.googlePlaceId || '').trim();
+    if (!key || !place) { this.setState({ reviews: [], apiError: '' }); return; }
+    try {
+      const res = await fetch('https://places.googleapis.com/v1/places/' + encodeURIComponent(place), {
+        headers: { 'X-Goog-Api-Key': key, 'X-Goog-FieldMask': 'reviews,rating,userRatingCount' }
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error((data.error && data.error.message) || res.status);
+      const base = 'width:38px;height:38px;border-radius:50%;flex:0 0 auto;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;color:oklch(0.55 0.14 45);background-color:oklch(0.94 0.05 25);background-size:cover;background-position:center';
+      const reviews = (data.reviews || []).map(r => {
+        const author = (r.authorAttribution && r.authorAttribution.displayName) || 'Google reviewer';
+        const photo = (r.authorAttribution && r.authorAttribution.photoUri) || '';
+        return {
+          stars: '★★★★★'.slice(0, Math.round(r.rating || 5)),
+          text: (r.originalText && r.originalText.text) || (r.text && r.text.text) || '',
+          author,
+          initial: photo ? '' : author.trim().charAt(0).toUpperCase(),
+          avatarStyle: photo ? base + ';background-image:url("' + photo + '")' : base,
+          when: r.relativePublishTimeDescription || ''
+        };
+      }).filter(r => r.text);
+      this.setState({ reviews, apiError: '' });
+    } catch (e) {
+      this.setState({ reviews: [], apiError: String(e.message || e) });
+    }
+  }
+
+  mountWidget() {
+    const el = this.host.current;
+    const id = (this.props.reviewWidgetId || '').trim();
+    if (!el) return;
+    el.innerHTML = '';
+    if (!id) return;
+    const provider = this.props.reviewProvider || 'Elfsight';
+    if (provider === 'Trustindex') {
+      const target = document.createElement('div');
+      target.className = 'ti-widget';
+      target.setAttribute('data-widget-id', id);
+      el.appendChild(target);
+      this.loadScript('https://cdn.trustindex.io/loader.js?' + encodeURIComponent(id));
+    } else {
+      const target = document.createElement('div');
+      target.className = 'elfsight-app-' + id;
+      el.appendChild(target);
+      this.loadScript('https://elfsightcdn.com/platform.js');
+      if (window.eapps && window.eapps.AppsManager) window.eapps.AppsManager.initApps();
+    }
+    this.forceUpdate();
+  }
+
+  loadScript(src) {
+    if (document.querySelector('script[data-rv-widget="' + src + '"]')) return;
+    const s = document.createElement('script');
+    s.src = src;
+    s.async = true;
+    s.defer = true;
+    s.setAttribute('data-rv-widget', src);
+    document.body.appendChild(s);
+  }
+
+  renderVals() {
+    const address = (this.props.shopAddress || '6 Soi Sathorn 19, Bangkok').trim();
+    const isCoords = /^-?\d+(\.\d+)?,\s*-?\d+(\.\d+)?/.test(address);
+    const mapQuery = isCoords ? address.split(',').slice(0,2).join(',') : address;
+    const mapEmbedSrc = 'https://www.google.com/maps?q=' + encodeURIComponent(mapQuery) + '&output=embed';
+    const mapTitle = 'Roadmates location — ' + address;
+    const directionsHref = (this.props.directionsUrl || '').trim() || ('https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(address));
+    const hasWidget = !!(this.props.reviewWidgetId || '').trim();
+    const hasGoogle = !!((this.props.googleApiKey || '').trim() && (this.props.googlePlaceId || '').trim());
+    return {
+      widgetHost: this.host,
+      reviews: this.state.reviews,
+      apiError: this.state.apiError,
+      needsSetup: !hasWidget && !hasGoogle,
+      hostMinHeight: hasWidget ? '240px' : '0px',
+      mapEmbedSrc: mapEmbedSrc,
+      mapTitle: mapTitle,
+      directionsHref: directionsHref
+    };
+  }
+}
+</script>
+</body>
+</html>
